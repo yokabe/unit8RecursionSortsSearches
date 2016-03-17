@@ -109,9 +109,9 @@ public class TreePanel extends JPanel
         Graphics2D g2 = (Graphics2D) g;
         super.paintComponent(g2);
         
-        drawFractal2(g2, 700, 900, 130, 0);
-        drawFractal3(g2, 700, 900, 130, 0);
-        drawFractal(g2, 700, 900, 130, 0);
+        drawFractal2(g2, 700, 900, 140, 0);
+        drawFractal3(g2, 700, 900, 140, 0);
+        drawFractal(g2, 700, 900, 140, 0);
         
     }
 }
