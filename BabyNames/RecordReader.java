@@ -7,6 +7,7 @@ public class RecordReader
 {
    private double total;
    private double limit;
+   private int totalCount;
 
    /**
       Constructs a RecordReader with a zero total.
@@ -17,6 +18,7 @@ public class RecordReader
       limit = aLimit;
    }
 
+   
    /**
       Reads an input record and prints the name if the current total is less 
       than the limit.
@@ -24,10 +26,11 @@ public class RecordReader
    */
    public void process(Scanner in)
    {
+      totalNumber(in);
       String name = in.next();
       int count = in.nextInt();
-      double percent = in.nextDouble();
-      
+      double percent = (count/totalCoun)*100;
+     
       if (total < limit) { System.out.print(name + " "); }
       total = total + percent;
    }
