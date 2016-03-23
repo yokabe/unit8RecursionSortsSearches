@@ -196,5 +196,5 @@
 196	Frederick	13,048	Autumn	13,823
 197	Julian	12,921	Jordan	13,787
 198	Jaime	12,844	Claudia	13,783
-199	Jermaine	12,801	Nina	13,621
-200	Geoffrey	12,724	Taylor	13,609
+199	Jermaine	12,801	Nina	13,621	
+200 Geoffrey	12,724	Taylor	13,609

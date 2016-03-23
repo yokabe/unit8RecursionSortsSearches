@@ -24,12 +24,13 @@ public class RecordReader
       than the limit.
       @param in the input stream
    */
-   public void process(Scanner in)
+   public void process(Scanner in, int totalz)
    {
-      totalNumber(in);
+      
       String name = in.next();
-      int count = in.nextInt();
-      double percent = (count/totalCoun)*100;
+      double count = in.nextDouble();
+      double percent = (count/totalz)*100;
+      
      
       if (total < limit) { System.out.print(name + " "); }
       total = total + percent;

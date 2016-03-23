@@ -12,15 +12,19 @@ public class BabyNames
          
       RecordReader boys = new RecordReader(LIMIT);
       RecordReader girls = new RecordReader(LIMIT);
-      
+      Scanner scan = new Scanner(System.in);
+      System.out.println("Total number of boys: ");
+      int boy = scan.nextInt();
+      System.out.println("Total number of girls: ");
+      int girl = scan.nextInt();
       
       
       while (boys.hasMore() || girls.hasMore())
       {
          int rank = in.nextInt();
          System.out.print(rank + " ");
-         boys.process(in);
-         girls.process(in);
+         boys.process(in, boy);
+         girls.process(in, girl);
          System.out.println();
       }
 
