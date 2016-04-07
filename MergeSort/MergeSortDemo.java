@@ -14,6 +14,13 @@ public class MergeSortDemo
       MergeSorter.sort(a);
 
       System.out.println(Arrays.toString(a));
+      
+      String[] s = ArrayUtil.randomStringArray(10, 6);
+      System.out.println(Arrays.toString(s));
+      
+      MergeSorter.sortString(s);
+
+      System.out.println(Arrays.toString(s));
    }
 }
 
